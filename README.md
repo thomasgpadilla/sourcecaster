@@ -8,4 +8,4 @@ Click on a button and it will show you a basic command that you can use to do wh
 
 For many of these commands you can get a fuller breakdown using explainshell.
 
-The Sourcecaster is adapted from ffmprovisr and Script Ahoy.
+The Sourcecaster is adapted from [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/ "ffmprovisr") and [Script Ahoy](http://dd388.github.io/crals/ "Script Ahoy").
