@@ -1,5 +1,5 @@
 body {
-  background-color: #DEE5EA;
+  background-color: white;
 }
 .well {
   background-color: white;
@@ -33,7 +33,7 @@ div {
 .btn {
     margin: 8px;
     color: white;
-    background-color: #505450;
+    background-color: #0F0101;
 }
 
 .btn {
