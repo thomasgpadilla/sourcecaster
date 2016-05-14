@@ -1,4 +1,4 @@
-# The Sourcecaster ⚡
+# ⚡ The Sourcecaster ⚡
 
 ## A resource for Historians working with digital primary sources
 
