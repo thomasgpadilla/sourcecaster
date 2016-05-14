@@ -51,7 +51,7 @@ div {
   transition-duration: 0.3s;
 }
 .btn:before {
-  content: "💫";
+  content: "⚡";
   position: absolute;
   left: 1em;
   padding: 0 1px;
