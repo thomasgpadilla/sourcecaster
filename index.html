@@ -35,15 +35,15 @@
 <div class="well col-md-8 col-md-offset-0">
 	
  <div class="well"><h4>Change</h4>
-  <!-- WAV to MP3 -->
-  <span data-toggle="modal" data-target=".wav_to_mp3"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Converts WAV to MP3">WAV to MP3</button></span>
+  <!-- PDF to TXT -->
+  <span data-toggle="modal" data-target="PDF_to_TXT"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Converts PDF to TXT">PDF to TXT</button></span>
   <div class="modal fade wav_to_mp3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>Image to PDF</h3>
-          <p><code>ffmpeg -i <i>input_file</i>.wav -write_id3v1 1 -id3v2_version 3 -dither_method modified_e_weighted -out_sample_rate 48k -b:a 320k <i>output_file</i>.mp3</code></p>
-          <p>This will convert your WAV files to MP3s.</p>
+          <h3>PDF to TXT</h3>
+          <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
+          <p>This will convert all text searchable PDFs to text files.</p>
           <dl>
             <dt>ffmpeg</dt><dd>starts the command</dd>
             <dt>-i <i>input_file</i></dt><dd>path and name of the input file</dd>
