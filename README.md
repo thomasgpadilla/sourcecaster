@@ -10,6 +10,14 @@ Historians spend a lot of time in archives, physical and digital. Whether it's c
 
 If you have suggestions for commands that help you with your work, or really any thoughts that can help make The Sourcecaster better, feel free to contribute to the codebase of the project, or shoot an email to [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") directly. 
 
+### Dependencies
+
+To take advantage of all commands in The Sourcecaster install the following:
+* [wget] (https://www.gnu.org/software/wget/ "wget")- lets you download (get) stuff on the web 
+* [tesseract] (https://github.com/tesseract-ocr "tesseract") - lets you perform optical character recognition on PDFs, making them text searchable
+* [ffmpeg] (https://ffmpeg.org/ "ffmpeg") - manipulate multiple types of media (moving images, image, etc.)
+* [imagemagick] (http://www.imagemagick.org/script/index.php "imagemagick") - manipulate images
+
 ### Attribution
 
 The Sourcecaster was built by [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") and ________ and is adapted from [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/ "ffmprovisr") and [Script Ahoy](http://dd388.github.io/crals/ "Script Ahoy").
