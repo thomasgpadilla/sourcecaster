@@ -1,6 +1,6 @@
 # ⚡ The Sourcecaster ⚡
 
-## A resource for Historians working with digital primary sources
+## Resource for Historians working with digital primary sources
 
 ### What it is
 
