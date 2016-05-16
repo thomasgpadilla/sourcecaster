@@ -20,4 +20,4 @@ To take advantage of all commands in The Sourcecaster install the following:
 
 ### Attribution
 
-The Sourcecaster was built by [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") and ________ and is adapted from [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/ "ffmprovisr") and [Script Ahoy](http://dd388.github.io/crals/ "Script Ahoy").
+The Sourcecaster was built by [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") and [James Baker](https://cradledincaricature.com/ "James Baker") and is adapted from [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/ "ffmprovisr") and [Script Ahoy](http://dd388.github.io/crals/ "Script Ahoy").
