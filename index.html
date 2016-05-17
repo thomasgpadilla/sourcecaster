@@ -55,6 +55,27 @@
     </div>
   </div>
   <!-- ends PDF to TXT -->
+  
+    <!-- TIFF to TXT -->
+  <span data-toggle="modal" data-target=".tiffto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="This will convert a TIFF image of a page to TXT.">TIFF to TXT</button></span>
+  <div class="modal fade tiffto_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>TIFF to TXT</h3>
+          <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
+          <p>This will convert all TIFF images of pages to text files.</p>
+          <dl>
+            <dt>for file in</dt><dd>for every file in the folder</dd>
+            <dt>*.tiff</dt><dd>that ends in the extension tiff</dd>
+            <dt>do tesseract</dt><dd>use the tesseract program to OCR each TIFF image</dd>
+            <dt>$i yourfoldername_$i; done;</dt><dd>prepend foldername to each text file produced by tesseract</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends TIFF to TXT -->
 
   </div>
   <div class="well">
