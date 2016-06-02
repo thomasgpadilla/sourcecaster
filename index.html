@@ -43,6 +43,8 @@
         <div class="well">
           <h3>pdf to txt</h3>
           <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
+                    <p><i></i>Sometimes you want to take text data out of a pdf, so you can begin to use text analysis methods and tools.</i></p>
+
           <p>This will convert all text searchable pdfs in a folder to text files.</p>
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
@@ -64,6 +66,7 @@
         <div class="well">
           <h3>tiff to txt</h3>
           <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
+           <p><i></i>Sometimes you want to take text data out of a tiff, so you can begin to use text analysis methods and tools.</i></p>
           <p>This will convert all tiff images of pages in a folder to text files.</p>
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
@@ -89,6 +92,7 @@
         <div class="well">
           <h3>save command line history</h3>
           <p><code>history > history.txt</code></p>
+           <p><i></i>Sometimes you want to save work on the command line, so you can remember what steps you took with your data.</i></p>
                     <p>This will save command line history to a txt file.</p>
                               <dl>
             <dt>history</dt><dd>take commandline history</dd>
