@@ -42,10 +42,11 @@
       <div class="modal-content">
         <div class="well">
           <h3>pdf to txt</h3>
-          <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
                     <p><i>Sometimes you want to take text data out of a pdf, so you can begin to use text analysis methods and tools.</i></p>
 
           <p>This will convert all text searchable pdfs in a folder to text files.</p>
+                    <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
+
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
             <dt>*.pdf</dt><dd>that ends in the extension pdf</dd>
@@ -65,9 +66,10 @@
       <div class="modal-content">
         <div class="well">
           <h3>tiff to txt</h3>
-          <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
            <p><i>Sometimes you want to take text data out of a tiff, so you can begin to use text analysis methods and tools.</i></p>
           <p>This will convert all tiff images of pages in a folder to text files.</p>
+                    <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
+
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
             <dt>*.tiff</dt><dd>that ends in the extension tiff</dd>
@@ -91,9 +93,10 @@
       <div class="modal-content">
         <div class="well">
           <h3>save command line history</h3>
-          <p><code>history > history.txt</code></p>
            <p><i>Sometimes you want to save work on the command line, so you can remember what steps you took with your data.</i></p>
                     <p>This will save command line history to a txt file.</p>
+                              <p><code>history > history.txt</code></p>
+
                               <dl>
             <dt>history</dt><dd>take commandline history</dd>
             <dt>> history.txt</dt><dd>and save it to a history.txt file</dd>
