@@ -35,61 +35,61 @@
 <div class="well col-md-8 col-md-offset-0">
 	
  <div class="well"><h4>Change</h4>
-  <!-- PDF to TXT -->
-  <span data-toggle="modal" data-target=".to_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Change PDF to TXT">PDF to TXT</button></span>
+  <!-- pdf to txt -->
+  <span data-toggle="modal" data-target=".to_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Change pdf to txt">pdf to txt</button></span>
   <div class="modal fade to_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>PDF to TXT</h3>
+          <h3>pdf to txt</h3>
           <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
-          <p>This will convert all text searchable PDFs in a folder to text files.</p>
+          <p>This will convert all text searchable pdfs in a folder to text files.</p>
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
             <dt>*.pdf</dt><dd>that ends in the extension pdf</dd>
-            <dt>do pdftotext</dt><dd>use the pdftotext program to extract OCR from each PDF</dd>
-            <dt>"$file" "$file.txt"</dt><dd>copy the filename from each PDF to the new text files</dd>
+            <dt>do pdftotext</dt><dd>use the pdftotext program to extract OCR from each pdf</dd>
+            <dt>"$file" "$file.txt"</dt><dd>copy the filename from each pdf to the new text files</dd>
           </dl>
         </div>
       </div>
     </div>
   </div>
-  <!-- ends PDF to TXT -->
+  <!-- ends pdf to txt -->
   
-    <!-- TIFF to TXT -->
-  <span data-toggle="modal" data-target=".tiffto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Change TIFF to TXT">TIFF to TXT</button></span>
+    <!-- tiff to txt -->
+  <span data-toggle="modal" data-target=".tiffto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Change tiff to txt">tiff to txt</button></span>
   <div class="modal fade tiffto_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>TIFF to TXT</h3>
+          <h3>tiff to txt</h3>
           <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
-          <p>This will convert all TIFF images of pages in a folder to text files.</p>
+          <p>This will convert all tiff images of pages in a folder to text files.</p>
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
             <dt>*.tiff</dt><dd>that ends in the extension tiff</dd>
-            <dt>do tesseract</dt><dd>use the tesseract program to OCR each TIFF image</dd>
+            <dt>do tesseract</dt><dd>use the tesseract program to OCR each tiff image</dd>
             <dt>$i yourfoldername_$i; done;</dt><dd>prepend foldername to each text file produced by tesseract</dd>
           </dl>
         </div>
       </div>
     </div>
   </div>
-  <!-- ends TIFF to TXT -->
+  <!-- ends tiff to txt -->
 
   </div>
   <div class="well">
   <h4>Manage</h4>
 
-  <!-- Save command line history -->
-  <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Save command line history to a txt file">Save command line history</button></span>
+  <!-- save command line history -->
+  <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="save command line history to a txt file">save command line history</button></span>
   <div class="modal fade create_gif" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>Save command line history</h3>
+          <h3>save command line history</h3>
           <p><code>history > history.txt</code></p>
-                    <p>Save command line history to a txt file</p>
+                    <p>save command line history to a txt file</p>
                               <dl>
             <dt>history</dt><dd>take commandline history</dd>
             <dt>> history.txt</dt><dd>and save it to a history.txt file</dd>
@@ -98,7 +98,7 @@
       </div>
     </div>
   </div>
-  <!-- Document Command History -->
+  <!-- save command line history -->
   
   </div>
   
