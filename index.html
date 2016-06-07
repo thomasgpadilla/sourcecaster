@@ -59,6 +59,28 @@
   </div>
   <!-- ends pdf to txt -->
   
+    
+      <!-- pdf to png -->
+  <span data-toggle="modal" data-target=".pdfpng"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="pdf to png">pdf to png</button></span>
+  <div class="modal fade pdfpng" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>pdf to png</h3>
+           <p><i>If you have a bunch of PDFs of images, studying them as images computationally is easier if you change them to an image format.</i></p>
+                    <p>This will split multipage PDFs and convert them to individual PNG files.</p>
+                              <p><code>find ./ -name "*.pdf" -exec mogrify -format png {} \;</code></p>
+
+                              <dl>
+            <dt>find ./ -name "*.pdf"</dt><dd>find all files that end in the pdf extension</dd>
+            <dt>-exec mogrify -format png {} \;</dt><dd>and use mogrify to convert them to png files</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pdf to png -->
+  
     <!-- tiff to txt -->
   <span data-toggle="modal" data-target=".tiffto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="change tiff to txt">tiff to txt</button></span>
   <div class="modal fade tiffto_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -81,6 +103,31 @@
     </div>
   </div>
   <!-- ends tiff to txt -->
+
+      <!-- markdown to html -->
+  <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">md to html</button></span>
+  <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>markdown to html</h3>
+           <p><i>If you take notes in the markdown format sometimes you want to publish them as html.</i></p>
+                    <p>This will convert a md file to an html file.</p>
+                              <p><code>pandoc foobar.md -f markdown -t html -s -o foobar.html</code></p>
+
+                              <dl>
+            <dt>pandoc</dt><dd>Use pandoc to convert</dd>
+            <dt>foobar.md</dt><dd>the foobar.md file</dd>
+                        <dt>-f markdown</dt><dd>by specifying the input file format as markdown</dd>
+            <dt>-t html</dt><dd>with desired output as html</dd>
+            <dt>-s -o foobar.html</dt><dd>to output a standalone foobar.html file</dd>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- markdown to html -->
 
   </div>
   <div class="well">
@@ -107,30 +154,7 @@
   </div>
   <!-- save command line history -->
   
-    <!-- markdown to html -->
-  <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">md to html</button></span>
-  <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="well">
-          <h3>markdown to html</h3>
-           <p><i>If you take notes in the markdown format sometimes you want to publish them as html.</i></p>
-                    <p>This will convert a md file to an html file.</p>
-                              <p><code>pandoc foobar.md -f markdown -t html -s -o foobar.html</code></p>
 
-                              <dl>
-            <dt>pandoc</dt><dd>Use pandoc to convert</dd>
-            <dt>foobar.md</dt><dd>the foobar.md file</dd>
-                        <dt>-f markdown</dt><dd>by specifying the input file format as markdown</dd>
-            <dt>-t html</dt><dd>with desired output as htmlt</dd>
-            <dt>-s -o foobar.html</dt><dd>to output a standalone foobar.html file</dd>
-
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- markdown to html -->
   
   </div>
   
