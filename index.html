@@ -112,21 +112,21 @@
   <div class="well">
     <h4>Edit</h4>
 
-  <!-- Mandelbrot -->
-  <span data-toggle="modal" data-target=".mandelbrot"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Make a mandelbrot test pattern video">Mandelbrot</button></span>
-  <div class="modal fade mandelbrot" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <!-- Edit many filenames -->
+  <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Edit many filenames">edit many filenames</button></span>
+  <div class="modal fade editfn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>Makes a mandelbrot test pattern video</h3>
-          <p><code>ffmpeg -f lavfi -i mandelbrot=size=1280x720:rate=25 -c:v libx264 -t 10 <i>output_file</i></code></p>
+          <h3>edit many filenames</h3>
+                <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
+          <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
           <dl>
-            <dt>ffmpeg</dt><dd>starts the command</dd>
-            <dt>-f lavfi</dt><dd>tells ffmpeg to use the Libavfilter input virtual device <a href="http://ffmpeg.org/ffmpeg-devices.html#lavfi" target="_blank">[more]</a></dd>
-            <dt>-i mandelbrot=size=1280x720:rate=25</dt><dd>asks for the mandelbrot test filter as input. Adjusting the <code>size</code> and <code>rate</code> options allow you to choose a specific frame size and framerate. <a href="https://ffmpeg.org/ffmpeg-filters.html#allrgb_002c-allyuv_002c-color_002c-haldclutsrc_002c-nullsrc_002c-rgbtestsrc_002c-smptebars_002c-smptehdbars_002c-testsrc" target="_blank">[more]</a></dd>
-            <dt>-c:v <i>libx264</i></dt><dd>transcodes video from rawvideo to H.264. Set <code>-pix_fmt</code> to <code>yuv420p</code> for greater H.264 compatibility with media players.</dd>
+            <dt>for file in</dt><dd>for every file in the folder</dd>
+            <dt>-f lavfi</dt><dd>that ends in the extension .txt</dd>
+            <dt>do mv</dt><dd>use the rename function</dd>
+            <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
             <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
-            <dt><i>output_file</i></dt><dd>path, name and extension of the output file. Try different file extensions such as mkv, mov, mp4, or avi.</dd>
           </dl>
         </div>
       </div>
