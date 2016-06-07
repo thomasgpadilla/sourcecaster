@@ -223,35 +223,7 @@
 
   
   </div>
-  <div class="well">
-  <h4>Analyze</h4>
 
-  <!-- Join files together -->
-  <span data-toggle="modal" data-target=".join_files"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Join (concatenate) two or more files into a single file">Join files together</button></span>
-  <div class="modal fade join_files" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="well">
-          <h3>Join files together</h3>
-          <p><code>ffmpeg -f concat -i mylist.txt -c copy <i>output_file</i></code></p>
-          <p>This command takes two or more files of the same file type and joins them together to make a single file. All that the program needs is a text file with a list specifying the files that should be joined. However, it only works properly if the files to be combined have the exact same codec and technical specifications. Be careful, ffmpeg may appear to have successfully joined two video files with different codecs, but may only bring over the audio from the second file or have other weird behaviors. Don’t use this command for joining files with different codecs and technical specs and always preview your resulting video file!</p>
-          <p>ffmpeg documentation on concatenating files (full list of flags, commands, <a href="https://trac.ffmpeg.org/wiki/Concatenate" target="_blank">https://trac.ffmpeg.org/wiki/Concatenate</a>)</p>
-          <dl>
-            <dt>ffmpeg</dt><dd>starts the command</dd>
-            <dt>-f concat</dt><dd>forces ffmpeg to concatenate the files and to keep the same file format</dd>
-            <dt>-i <i>mylist.txt</i></dt><dd>path, name and extension of the input file. This text file contains the list of files to be concatenated and should be formatted as follows:
-              <pre><i>path_name_and_extension_to_the_first_file
-  path_name_and_extension_to_the_second_file
-  . . .
-  path_name_and_extension_to_the_last_file</i></pre></dd>
-            <dt>-c copy</dt><dd>use stream copy mode to re-mux instead of re-encode</dd>
-            <dt><i>output_file</i></dt><dd>path, name and extension of the output file</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ends Join files together -->
 </div>
 </div> <!-- end "well col-md-6 col-md-offset-2" -->
 </div> <!-- row -->
