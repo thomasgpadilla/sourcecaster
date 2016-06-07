@@ -19,6 +19,7 @@ To take advantage of all commands in The Sourcecaster install the following:
 * [tesseract] (https://github.com/tesseract-ocr "tesseract") - lets you perform optical character recognition on PDFs, making them text searchable
 * [ffmpeg] (https://ffmpeg.org/ "ffmpeg") - manipulate multiple types of media (moving images, image, etc.)
 * [imagemagick] (http://www.imagemagick.org/script/index.php "imagemagick") - manipulate images
+* [pandoc] (http://pandoc.org/index.html "pandoc") - manipulate and convert wide array of documents
 
 ### Attribution
 
