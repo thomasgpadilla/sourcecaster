@@ -34,7 +34,7 @@
 
 <div class="well col-md-8 col-md-offset-0">
 	
- <div class="well"><h4>Change</h4>
+ <div class="well"><h4>Changing</h4>
   <!-- pdf to txt -->
   <span data-toggle="modal" data-target=".to_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="change pdf to txt">pdf to txt</button></span>
   <div class="modal fade to_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -104,7 +104,14 @@
   </div>
   <!-- ends tiff to txt -->
 
-      <!-- markdown to html -->
+
+
+  </div>
+  
+    <div class="well">
+  <h4>Getting</h4>
+  
+        <!-- markdown to html -->
   <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">md to html</button></span>
   <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
@@ -128,10 +135,15 @@
     </div>
   </div>
   <!-- markdown to html -->
+  
 
+  
   </div>
+  
   <div class="well">
-  <h4>Manage</h4>
+  <h4>Managing</h4>
+  
+  
 
   <!-- save command line history -->
   <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="save command line history to a txt file">save command line history</button></span>
@@ -153,13 +165,37 @@
     </div>
   </div>
   <!-- save command line history -->
+        <!-- markdown to html -->
+  <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">md to html</button></span>
+  <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>markdown to html</h3>
+           <p><i>If you take notes in the markdown format sometimes you want to publish them as html.</i></p>
+                    <p>This will convert a md file to an html file.</p>
+                              <p><code>pandoc foobar.md -f markdown -t html -s -o foobar.html</code></p>
+
+                              <dl>
+            <dt>pandoc</dt><dd>Use pandoc to convert</dd>
+            <dt>foobar.md</dt><dd>the foobar.md file</dd>
+                        <dt>-f markdown</dt><dd>by specifying the input file format as markdown</dd>
+            <dt>-t html</dt><dd>with desired output as html</dd>
+            <dt>-s -o foobar.html</dt><dd>to output a standalone foobar.html file</dd>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- markdown to html -->
   
 
   
   </div>
   
   <div class="well">
-    <h4>Edit</h4>
+    <h4>Editing</h4>
 
   <!-- Edit many filenames -->
   <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Edit many filenames">edit many filenames</button></span>
