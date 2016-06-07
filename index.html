@@ -143,7 +143,29 @@
   <div class="well">
   <h4>Managing</h4>
   
-  
+    <!-- Edit many filenames -->
+  <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Edit many filenames">edit many filenames</button></span>
+  <div class="modal fade editfn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>edit many filenames</h3>
+                <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
+                                <p>This will remove 'foobar' or any variation in that space from every file.</p>
+
+          <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
+          <dl>
+            <dt>for file in</dt><dd>for every file in the folder</dd>
+            <dt>*.txt</dt><dd>that ends in the extension .txt</dd>
+            <dt>do mv</dt><dd>use the rename function</dd>
+            <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
+            <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit many filenames -->
 
   <!-- save command line history -->
   <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="save command line history to a txt file">save command line history</button></span>
@@ -190,36 +212,6 @@
   </div>
   <!-- markdown to html -->
   
-
-  
-  </div>
-  
-  <div class="well">
-    <h4>Editing</h4>
-
-  <!-- Edit many filenames -->
-  <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Edit many filenames">edit many filenames</button></span>
-  <div class="modal fade editfn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="well">
-          <h3>edit many filenames</h3>
-                <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
-                                <p>This will remove 'foobar' or any variation in that space from every file.</p>
-
-          <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
-          <dl>
-            <dt>for file in</dt><dd>for every file in the folder</dd>
-            <dt>*.txt</dt><dd>that ends in the extension .txt</dd>
-            <dt>do mv</dt><dd>use the rename function</dd>
-            <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
-            <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ends Mandelbrot -->
 
   
   </div>
