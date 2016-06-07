@@ -107,6 +107,31 @@
   </div>
   <!-- save command line history -->
   
+    <!-- markdown to html -->
+  <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">save command line history</button></span>
+  <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>markdown to html</h3>
+           <p><i>If you take notes in the markdown format sometimes you want to publish them as html.</i></p>
+                    <p>This will convert a markdown file to an html file.</p>
+                              <p><code>pandoc foobar.md -f markdown -t html -s -o foobar.html</code></p>
+
+                              <dl>
+            <dt>pandoc</dt><dd>Specify pandoc conversion</dd>
+            <dt>foobar.md</dt><dd>for the source file foobar.md</dd>
+                        <dt>-f markdown</dt><dd>with an input markdown format</dd>
+            <dt>-t html</dt><dd>and an output html format</dd>
+            <dt>-s -o foobar.html</dt><dd>to output a standalone foobar.html</dd>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- save command line history -->
+  
   </div>
   
   <div class="well">
@@ -120,10 +145,12 @@
         <div class="well">
           <h3>edit many filenames</h3>
                 <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
+                                <p>This will remove 'foobar' or any variation in that space from every file.</p>
+
           <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
           <dl>
             <dt>for file in</dt><dd>for every file in the folder</dd>
-            <dt>-f lavfi</dt><dd>that ends in the extension .txt</dd>
+            <dt>*.txt</dt><dd>that ends in the extension .txt</dd>
             <dt>do mv</dt><dd>use the rename function</dd>
             <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
             <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
