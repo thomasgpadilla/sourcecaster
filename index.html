@@ -120,13 +120,13 @@
           <h3>scrape items, using list</h3>
            <p><i>Sometimes you want to download many documents or images that are linked from a page.</i></p>
                     <p>This will use a list of item URLs to automate download of items.</p>
-                              <p><code>wget -w 10 --limit-rate=20k -i portrait_list.txt</code></p>
+                              <p><code>wget -w 10 --limit-rate=20k -i item_urllist.txt</code></p>
 
                               <dl>
             <dt>wget</dt><dd>Start wget and specify</dd>
             <dt>-w 10</dt><dd>request of single files, at 10 second intervals from target server</dd>
                         <dt>--limit-rate=20k</dt><dd>limit the download rate to 20k</dd>
-            <dt>-i</dt><dd>input and use a plain text file that contains URLs for each item you want to download</dd>
+            <dt>-i item_urllist.txt</dt><dd>input and use a plain text file that contains URLs for each item you want to download</dd>
           </dl>
         </div>
       </div>
