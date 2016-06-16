@@ -111,24 +111,22 @@
     <div class="well">
   <h4>Get</h4>
   
-        <!-- markdown to html -->
-  <span data-toggle="modal" data-target=".mdhtml"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="markdown to html">md to html</button></span>
-  <div class="modal fade mdhtml" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <!-- webscrape list of files -->
+  <span data-toggle="modal" data-target=".webfiles"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="webscrape list of files">webscrape list of files</button></span>
+  <div class="modal fade webfiles" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>markdown to html</h3>
-           <p><i>If you take notes in the markdown format sometimes you want to publish them as html.</i></p>
-                    <p>This will convert a md file to an html file.</p>
-                              <p><code>pandoc foobar.md -f markdown -t html -s -o foobar.html</code></p>
+          <h3>webscrape list of files</h3>
+           <p><i>If you have a list files and corresponding URLs, and you want to automate downloading many of them from a page</i></p>
+                    <p>This will use a list of file URLs to automate download of files.</p>
+                              <p><code>wget -w 10 --limit-rate=20k -i portrait_list.txt</code></p>
 
                               <dl>
-            <dt>pandoc</dt><dd>Use pandoc to convert</dd>
-            <dt>foobar.md</dt><dd>the foobar.md file</dd>
-                        <dt>-f markdown</dt><dd>by specifying the input file format as markdown</dd>
-            <dt>-t html</dt><dd>with desired output as html</dd>
-            <dt>-s -o foobar.html</dt><dd>to output a standalone foobar.html file</dd>
-
+            <dt>wget</dt><dd>Start wget and specify</dd>
+            <dt>-w 10</dt><dd>request of single files, at 10 second intervals from target server</dd>
+                        <dt>--limit-rate=20k</dt><dd>limit the download rate to 20k</dd>
+            <dt>-i</dt><dd>input and use a plain text file that contains URLs for each item you want to download</dd>
           </dl>
         </div>
       </div>
