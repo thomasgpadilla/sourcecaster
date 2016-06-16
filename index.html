@@ -103,6 +103,28 @@
     </div>
   </div>
   <!-- ends tiff to txt -->
+  
+      <!-- html to txt -->
+  <span data-toggle="modal" data-target=".htmlto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="html to txt">html to txt</button></span>
+  <div class="modal fade htmlto_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>html to txt</h3>
+           <p><i>Sometimes you want to remove HTML markup from webpages you save, so you can begin to use text analysis methods and tools.</i></p>
+          <p>This will remove markup from HTML files and convert them to txt files.</p>
+                    <p><code>textutil -convert txt *.html</code></p>
+
+          <dl>
+            <dt>textutil</dt><dd>start textutil and</dd>
+            <dt>-convert</dt><dd>use the convert function</dd>
+            <dt>txt *.html</dt><dd>to conver all files in the current directory that end in .html to txt files</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- html to txt -->
 
 
 
@@ -118,7 +140,7 @@
       <div class="modal-content">
         <div class="well">
           <h3>scrape items, using list</h3>
-           <p><i>Sometimes you want to download many documents or images that are linked from a page.</i></p>
+           <p><i>Sometimes you want to download many documents or images that are linked from a webpage.</i></p>
                     <p>This will use a list of item URLs to automate download of items.</p>
                               <p><code>wget -w 10 --limit-rate=20k -i item_urllist.txt</code></p>
 
@@ -132,7 +154,7 @@
       </div>
     </div>
   </div>
-  <!-- markdown to html -->
+  <!-- scrape items, using list -->
   
 
   
