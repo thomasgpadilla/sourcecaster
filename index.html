@@ -130,62 +130,10 @@
 
   </div>
   
-    <div class="well">
-  <h4>Get</h4>
-  
-        <!-- scrape items, using list -->
-  <span data-toggle="modal" data-target=".webfiles"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="scrape items, using list">scrape items, using list</button></span>
-  <div class="modal fade webfiles" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="well">
-          <h3>scrape items, using list</h3>
-           <p><i>Sometimes you want to download many documents or images that are linked from a webpage.</i></p>
-                    <p>This will use a list of item URLs to automate download of items.</p>
-                              <p><code>wget -w 10 --limit-rate=20k -i item_urllist.txt</code></p>
-
-                              <dl>
-            <dt>wget</dt><dd>Start wget and specify</dd>
-            <dt>-w 10</dt><dd>request of single files, at 10 second intervals from target server</dd>
-                        <dt>--limit-rate=20k</dt><dd>limit the download rate to 20k</dd>
-            <dt>-i item_urllist.txt</dt><dd>input and use a plain text file that contains URLs for each item you want to download</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- scrape items, using list -->
-  
-
-  
-  </div>
+   
   
   <div class="well">
   <h4>Manage</h4>
-  
-    <!-- Edit many filenames -->
-  <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="edit many filenames">edit many filenames</button></span>
-  <div class="modal fade editfn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="well">
-          <h3>edit many filenames</h3>
-                <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
-                                <p>This will remove 'foobar' or any variation in that space from every file.</p>
-
-          <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
-          <dl>
-            <dt>for file in</dt><dd>for every file in the folder</dd>
-            <dt>*.txt</dt><dd>that ends in the extension .txt</dd>
-            <dt>do mv</dt><dd>use the rename function</dd>
-            <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
-            <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Edit many filenames -->
 
   <!-- save command line history -->
   <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="save command line history to a txt file">save command line history</button></span>
@@ -231,8 +179,56 @@
     </div>
   </div>
   <!-- markdown to html -->
-  
+    
+    <!-- Edit many filenames -->
+  <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="edit many filenames">edit many filenames</button></span>
+  <div class="modal fade editfn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>edit many filenames</h3>
+                <p><i>Sometimes you need to edit many file names, so that you can make them more consistent.</i></p>
+                                <p>This will remove 'foobar' or any variation in that space from every file.</p>
 
+          <p><code>for file in *.txt; do mv "$file" "${file/foobar/}"; done</code></p>
+          <dl>
+            <dt>for file in</dt><dd>for every file in the folder</dd>
+            <dt>*.txt</dt><dd>that ends in the extension .txt</dd>
+            <dt>do mv</dt><dd>use the rename function</dd>
+            <dt>"$file" "${file/foobar/}"; done</dt><dd>to remove 'foobar' or any variation in that space from every file</dd>
+            <dt>-t 10</dt><dd>specifies recording time of 10 seconds</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit many filenames -->
+
+   <div class="well">
+  <h4>Get</h4>
+  
+        <!-- scrape items, using list -->
+  <span data-toggle="modal" data-target=".webfiles"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="scrape items, using list">scrape items, using list</button></span>
+  <div class="modal fade webfiles" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>scrape items, using list</h3>
+           <p><i>Sometimes you want to download many documents or images that are linked from a webpage.</i></p>
+                    <p>This will use a list of item URLs to automate download of items.</p>
+                              <p><code>wget -w 10 --limit-rate=20k -i item_urllist.txt</code></p>
+
+                              <dl>
+            <dt>wget</dt><dd>Start wget and specify</dd>
+            <dt>-w 10</dt><dd>request of single files, at 10 second intervals from target server</dd>
+                        <dt>--limit-rate=20k</dt><dd>limit the download rate to 20k</dd>
+            <dt>-i item_urllist.txt</dt><dd>input and use a plain text file that contains URLs for each item you want to download</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scrape items, using list -->
   
   </div>
 
