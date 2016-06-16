@@ -15,6 +15,7 @@ If you have suggestions for commands that help you with your work, or really any
 ### Dependencies
 
 To take advantage of all commands in The Sourcecaster install the following:
+* [xpdf] (http://www.foolabs.com/xpdf/download.html "xpdf")- open source PDF manipulation
 * [wget] (https://www.gnu.org/software/wget/ "wget")- lets you download (get) stuff from the web in bulk (images, sound files, etc.) 
 * [tesseract] (https://github.com/tesseract-ocr "tesseract") - lets you perform optical character recognition on PDFs, making them text searchable
 * [ffmpeg] (https://ffmpeg.org/ "ffmpeg") - manipulate multiple types of media (moving images, image, etc.)
