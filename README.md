@@ -6,7 +6,7 @@
 
 ### What it's for
 
-Historians spend a lot of time in archives, physical and digital. Whether it's capturing images of sources with a camera, or gathering digitized versions, there comes a time when they need to manage, modify, and even augment the stuff. There are ways to go about this with something like the Python programming language, but it turns out a lot of what you need can be managed with small but powerful programs run via the command line (Terminal, if you're on a Mac). [The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") gathers useful commands that help Historians work through common challenges that come up when working with digital primary sources.
+Historians spend a lot of time working with collections of stuff. Whether it's capturing images of pages with a camera, or gathering digitized versions, there comes a time when they need to manage, modify, and even augment the stuff. There are ways to go about this with something like the Python programming language, but it turns out a lot of what you need can be managed with small but powerful programs run via the command line (Terminal, if you're on a Mac). [The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") gathers useful commands that help Historians work through common challenges that come up when working with digital primary sources.
 
 ### How you can help
 
