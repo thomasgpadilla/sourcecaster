@@ -34,7 +34,7 @@
 
 <div class="well col-md-8 col-md-offset-0">
 	
- <div class="well"><h4>Cast</h4>
+ <div class="well"><h4>Casting</h4>
   <!-- pdf to txt -->
   <span data-toggle="modal" data-target=".to_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="change pdf to txt">pdf to txt</button></span>
   <div class="modal fade to_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -68,7 +68,7 @@
       <div class="modal-content">
         <div class="well">
           <h3>tiff to txt</h3>
-           <p><i>Sometimes you want to take text data out of a tiff, so you can begin to use text analysis methods and tools.</i></p>
+           <p><i>Sometimes you want to identify and take text data out of a tiff, so you can begin to use text analysis methods and tools.</i></p>
           <p>This will convert all tiff images of pages in a folder to text files.</p>
                     <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
 
@@ -127,13 +127,61 @@
   </div>
   <!-- pdf to png -->
   
+    <!-- mp4 to animated gif -->
+  <span data-toggle="modal" data-target=".mp4gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="change mp4 to animated gif">mp4 to animated gif</button></span>
+  <div class="modal fade mp4gif" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>mp4 to animated gif</h3>
+           <p><i>If you have a segment of a video that you want to convert to an animated gif for the web, and possibly even presentation fun.</i></p>
+                    <p>This will split and convert a segment from an mp4 video file into an animated gif.</p>
+                              <p><code>ffmpeg -ss 0 -t 13 -i inputfile.mp4 outputfile.gif</code></p>
+
+                              <dl>
+            <dt>ffmpeg</dt><dd>start ffmpeg and </dd>
+                        <dt>-ss 0</dt><dd>specify the start of the animated gif at second 0 of the file</dd>
+                                                <dt>-t 13</dt><dd>specify a 13 second duration from the designated start</dd>
+            <dt>-i inputfile.mp4 outputfile.gif</dt><dd>designate input mp4 file and name the and output gif file</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mp4 to animated gif -->
+  
+      <!-- resize video -->
+  <span data-toggle="modal" data-target=".resizevid"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="resize video">resize video</button></span>
+  <div class="modal fade resizevid" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>resize video</h3>
+           <p><i>If you have a large video and want to resize it to make it more accessible.</i></p>
+                    <p>This will resize a video by dimension.</p>
+                              <p><code>ffmpeg -i inputfile.mp4 -vf scale=640:480 outputfile.mp4</code></p>
+
+                              <dl>
+            <dt>ffmpeg</dt><dd>start ffmpeg and </dd>
+                        <dt>-i inputfile.mp4</dt><dd>designate input mp4 file</dd>
+                                                <dt>-vf scale=640:480</dt><dd>specify dimensions of the resized file</dd>
+            <dt>outputfile.mp4</dt><dd>name resized file</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- resize video -->
+  
+  
+  
 
   </div>
   
    
   
   <div class="well">
-  <h4>Manage</h4>
+  <h4>Managing</h4>
 
   <!-- save command line history -->
   <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="save command line history to a txt file">save command line history</button></span>
@@ -207,7 +255,7 @@
 
 
    <div class="well">
-  <h4>Get</h4>
+  <h4>Getting</h4>
   
         <!-- scrape items, using list -->
   <span data-toggle="modal" data-target=".webfiles"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="scrape items, using list">scrape items, using list</button></span>
