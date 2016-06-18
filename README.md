@@ -2,11 +2,11 @@
 
 ### What it is
 
-[The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") gathers command line commands that help you work through common challenges that come up when working with digital primary sources. 
+[The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
 
 ### What it's for
 
-Whether capturing page images with a camera, or gathering digitized versions, there comes a time when you need to manage, modify, and even augment the stuff. There are ways to go about this with something like the Python programming language, but it turns out a lot of what you need can be managed with small but powerful programs run via the command line (Terminal, if you're on a Mac). [The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") gathers command line commands that help you work through common challenges that come up when working with digital primary sources. 
+Whether capturing page images with a camera, or gathering digitized versions, there comes a time when you need to manage, modify, and even augment the stuff. There are ways to go about this with something like the Python programming language, but it turns out a lot of what you need can be managed with small but powerful programs run via the command line (Terminal, if you're on a Mac). [The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
 
 ### How you can help
 
