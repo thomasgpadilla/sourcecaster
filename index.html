@@ -225,9 +225,29 @@
   </div>
   <!-- resize video -->
   
-  
-  
+        <!-- extract audio -->
+  <span data-toggle="modal" data-target=".extaudio"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="mp4 to mp3">mp4 to mp3</button></span>
+  <div class="modal fade extaudio" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>Extract audio from video</h3>
+           <p><i>If you have a video file and want to extract the audio.</i></p>
+                    <p>This will extract audio from a video file and create an mp3.</p>
+                              <p><code>ffmpeg -i inputfile.mp4 -b:a 192K -vn outputfile.mp3</code></p>
 
+                              <dl>
+            <dt>ffmpeg</dt><dd>start ffmpeg and </dd>
+                        <dt>-i inputfile.mp4</dt><dd>designate input mp4 file</dd>
+                                                <dt>-b:a 192K</dt><dd>set audio bitrate at 192K</dd>
+            <dt>-vn</dt><dd>disable video recording</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- extract audio -->
+  
   </div>
   
    
