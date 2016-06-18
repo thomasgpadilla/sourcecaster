@@ -308,6 +308,30 @@
   </div>
   <!-- scrape items, using list -->
   
+          <!-- scrape items, by format -->
+  <span data-toggle="modal" data-target=".scrformat"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="scrape items, by format">scrape items, by format</button></span>
+  <div class="modal fade scrformat" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>scrape items, by format</h3>
+           <p><i>Sometimes you want to traverse multiple levels of a website to download certain file formats like images.</i></p>
+                    <p>This will save all the .jpg files within three links from 'http://www.foo.bar'.</p>
+                              <p><code>wget -w 1 -r -l 3 -A jpeg,jpg --limit-rate=100k http://www.foo.bar</code></p>
+
+                              <dl>
+            <dt>wget</dt><dd>Start wget and specify</dd>
+            <dt>-w 10</dt><dd>request of files, at 1 second intervals from target server</dd>
+                                    <dt>-r -l 3</dt><dd>retrieve matching items recurisvely within three links from 'http://www.foo.bar'</dd>
+                                                <dt>-A jpeg, jpg</dt><dd>only download jpeg and jpg files</dd>
+                        <dt>--limit-rate=00k</dt><dd>limit the download rate to 100k per second</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scrape items, by format -->
+  
   </div>
   </div>
 
