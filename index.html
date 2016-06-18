@@ -42,7 +42,7 @@
       <div class="modal-content">
         <div class="well">
           <h3>pdf to txt</h3>
-                    <p><i>Sometimes you want to take text data out of a pdf, so you can begin to use text analysis methods and tools.</i></p>
+                    <p><i>Sometimes you want to take text data out of searchable pdfs, so you can begin to use text analysis methods and tools.</i></p>
 
           <p>This will convert all text searchable pdfs in a folder to text files.</p>
                     <p><code>for file in *.pdf; do pdftotext "$file" "$file.txt"; done</code></p>
@@ -68,7 +68,7 @@
       <div class="modal-content">
         <div class="well">
           <h3>tiff to txt</h3>
-           <p><i>Sometimes you want to identify and take text data out of a tiff, so you can begin to use text analysis methods and tools.</i></p>
+           <p><i>Sometimes you want to generate text data from images of pages, so you can begin to use text analysis methods and tools.</i></p>
           <p>This will convert all tiff images of pages in a folder to text files.</p>
                     <p><code>for i in *.tiff; do tesseract $i yourfoldername_$i; done;</code></p>
 
@@ -151,12 +151,12 @@
   <!-- mp4 to animated gif -->
   
       <!-- resize video -->
-  <span data-toggle="modal" data-target=".resizevid"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="resize video">resize video</button></span>
+  <span data-toggle="modal" data-target=".resizevid"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="resize mp4">resize mp4</button></span>
   <div class="modal fade resizevid" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>resize video</h3>
+          <h3>resize mp4</h3>
            <p><i>If you have a large video and want to resize it to make it more accessible.</i></p>
                     <p>This will resize a video by dimension.</p>
                               <p><code>ffmpeg -i inputfile.mp4 -vf scale=640:480 outputfile.mp4</code></p>
