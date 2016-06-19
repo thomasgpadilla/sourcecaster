@@ -1,16 +1,16 @@
-# ⚡ the sourcecaster ⚡
+# the sourcecaster
 
 ### what it is
 
-[The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
+[the sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "the sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
 
 ### how you can help
 
-If you have suggestions for commands that help you with your work, or really any thoughts that can help make The Sourcecaster better, feel free to contribute to the codebase of the project, or shoot an email to [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") directly. 
+if you have suggestions for commands that help you with your work, or really any thoughts that can help make the sourcecaster better, feel free to contribute to the codebase of the project, or shoot an email to [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") directly. 
 
 ### dependencies
 
-To take advantage of all commands in The Sourcecaster install the following:
+to take advantage of all commands in the sourcecaster install the following:
 * [brew] (http://brew.sh/ "brew")- package manager, makes it easier to install command line tools
 * [port] (https://www.macports.org/ "port")- package manager, makes it easier to install command line tools
 * [xpdf] (http://www.foolabs.com/xpdf/download.html "xpdf")- open source PDF manipulation
