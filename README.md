@@ -1,14 +1,14 @@
-# ⚡ The Sourcecaster ⚡
+# ⚡ the sourcecaster ⚡
 
-### What it is
+### what it is
 
 [The Sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "The Sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
 
-### How you can help
+### how you can help
 
 If you have suggestions for commands that help you with your work, or really any thoughts that can help make The Sourcecaster better, feel free to contribute to the codebase of the project, or shoot an email to [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") directly. 
 
-### Dependencies
+### dependencies
 
 To take advantage of all commands in The Sourcecaster install the following:
 * [brew] (http://brew.sh/ "brew")- package manager, makes it easier to install command line tools
@@ -20,6 +20,6 @@ To take advantage of all commands in The Sourcecaster install the following:
 * [imagemagick] (http://www.imagemagick.org/script/index.php "imagemagick") - manipulate images
 * [pandoc] (http://pandoc.org/index.html "pandoc") - manipulate and convert wide array of documents
 
-### Attribution
+### attribution
 
 The Sourcecaster was built by [Thomas Padilla](https://thomaspadilla.org "Thomas Padilla") and [James Baker](https://cradledincaricature.com/ "James Baker") and is adapted from [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/ "ffmprovisr") and [Script Ahoy](http://dd388.github.io/crals/ "Script Ahoy").
