@@ -14,8 +14,8 @@ to take advantage of all commands in the sourcecaster install the following:
 * [brew] (http://brew.sh/ "brew")- package manager, makes it easier to install command line tools
 * [port] (https://www.macports.org/ "port")- package manager, makes it easier to install command line tools
 * [xpdf] (http://www.foolabs.com/xpdf/download.html "xpdf")- open source PDF manipulation
-* [wget] (https://www.gnu.org/software/wget/ "wget")- lets you download (get) stuff from the web in bulk (images, sound files, etc.) 
-* [tesseract] (https://github.com/tesseract-ocr "tesseract") - lets you perform optical character recognition on PDFs, making them text searchable
+* [wget] (https://www.gnu.org/software/wget/ "wget")- download (get) stuff from the web in bulk (images, sound files, etc.) 
+* [tesseract] (https://github.com/tesseract-ocr "tesseract") - perform optical character recognition, making files text searchable
 * [ffmpeg] (https://ffmpeg.org/ "ffmpeg") - manipulate multiple types of media (moving images, image, etc.)
 * [imagemagick] (http://www.imagemagick.org/script/index.php "imagemagick") - manipulate images
 * [pandoc] (http://pandoc.org/index.html "pandoc") - manipulate and convert wide array of documents
