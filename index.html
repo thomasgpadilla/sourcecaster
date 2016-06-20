@@ -313,7 +313,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>scrape items, using list</h3>
+          <h3>scrape web based items, using list</h3>
            <p><i>Sometimes you want to download many documents or images that are linked from a webpage.</i></p>
                     <p>This will use a list of item URLs to automate download of items.</p>
                               <p><code>wget -w 10 --limit-rate=20k -i item_urllist.txt</code></p>
@@ -336,7 +336,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>scrape items, by format</h3>
+          <h3>scrape web based items, by format</h3>
            <p><i>Sometimes you want to traverse multiple levels of a website to download certain file formats like images.</i></p>
                     <p>This will save all the .jpg files within three links from 'http://www.foo.bar'.</p>
                               <p><code>wget -w 1 -r -l 3 -A jpeg,jpg --limit-rate=100k http://www.foo.bar</code></p>
