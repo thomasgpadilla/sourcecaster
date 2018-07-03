@@ -184,6 +184,7 @@
     </div>
   </div>
   <!-- pdf to png -->
+
   
     <!-- mp4 to animated gif -->
   <span data-toggle="modal" data-target=".mp4gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="mp4 to animated gif">mp4 to animated gif</button></span>
@@ -353,6 +354,30 @@
     </div>
   </div>
   <!-- scrape items, by format -->
+	   
+	       <!-- getting images from pdf -->
+  <span data-toggle="modal" data-target=".scrformat"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="web based items, by format">web based items, by format</button></span>
+  <div class="modal fade scrformat" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>extracting images from pdf files</h3>
+           <p><i>Sometimes you want to extract the images in a pdf like separate images.</i></p>
+                    <p>This will save all the images in a pdf in seperate .png files with the page in which they were found encoded in the title</p>
+                              <p><code>for f in *.pdf; do pdfimages $f ${f%.*} -p -png; done</code></p>
+		 <dl>
+            <dt>for f in</dt><dd>for every file (f) in the folder</dd>
+            <dt>*.txt</dt><dd>with a .pdf extension</dd>
+            <dt>do pdfimages</dt><dd>use the pdfimages, which is an open-source command-line utility for extracting images</dd>
+            <dt>$f ${f%.*}</dt><dd>to every file ($f) and name the image the same way as the file but without the pdf extension (${f%.*})</dd>
+          </dl>
+	<dt>-p -png; done</dt><dd>also add the page where the image was found (-p) and save the file as a png (-png)</dd>
+          </dl>                        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- getting images from pdf  -->
 
   </div>
 
